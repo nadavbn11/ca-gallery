@@ -32,6 +32,11 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
 }
+
+ :hover{
+animation: animated bounce;
+}
+
 section h3.section-subheading {
     font-size: 16px;
     font-weight: 400;
@@ -85,7 +90,7 @@ body {
     position: fixed;
     height: 100%;
     z-index: 100000;
-    background: red;
+    background: rgb(168, 167, 167);
     width: 80vw;
     left: -80vw;
     transition: all 0.3s ease;
@@ -166,6 +171,8 @@ body {
         transition: padding-top 0.3s, padding-bottom 0.3s;
         border: none;
         background-color: transparent;
+        background-color: #222222;
+        z-index: 1000000;
     }
     #mainNav .navbar-brand {
         font-size: 1.75em;
@@ -187,10 +194,19 @@ body {
     }
    
 }
+
+h4{
+    padding: 20px;
+}
+.contact-box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url("../img/header-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -219,10 +235,7 @@ header.masthead .intro-text .intro-heading {
     text-transform: uppercase;
 }
 @media (min-width: 768px) {
-    header.masthead .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
-    }
+  
     header.masthead .intro-text .intro-lead-in {
         font-size: 40px;
         font-style: italic;
@@ -252,7 +265,7 @@ header.masthead .intro-text .intro-heading {
     display: block;
     max-width: 400px;
     margin: 0 auto;
-    cursor: pointer;
+    
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
     position: absolute;
@@ -639,6 +652,7 @@ ul.social-buttons li a:hover {
     background-color: #fed136;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    margin: 50px;
 }
 .btn-primary.focus,
 .btn-primary:focus {
@@ -702,6 +716,7 @@ fieldset[disabled] .btn-primary:hover {
     background-color: #fed136;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    margin: 50px;
 }
 .btn-xl.focus,
 .btn-xl:focus {
@@ -755,3 +770,14 @@ fieldset[disabled] .btn-xl:hover {
     color: #fed136;
     background-color: white;
 }
+
+.col-lg-12:hover{
+    animation-name: bounce;
+    animation-duration: 2s;
+} 
+
+.img-fluid{
+    width:300pxl;
+    height: 300px;
+}
+

@@ -19,6 +19,7 @@
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="lib/animate.css">
 
   <!-- Custom styles for this template -->
   <link href="css/ca-gallery.css" rel="stylesheet">
@@ -32,8 +33,15 @@
   <aside class="offcanvas-aside">
 
   <!-- Contact -->
-  <section id="contact">
+  <section class="text-center" id="contact" flex-align-center>
     <h4>Contact Me</h4>
+    <form action="/action_page.php" class="contact-box">
+      Your name: <input type="text" name="fname"><br>
+      Phone No:<input type="number" name="lname"><br>
+      Email :     <input type="email" name="fname"><br>
+      Massage:   <input type="text" name="lname"><br>
+      <input type="submit"  class='btn-xl' value="Submit">
+    </form>
   </section>
     
   </aside>
@@ -44,12 +52,12 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars"></i>
+          <i class="fa fa-bars animated bounce"></i>
         </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse animated swing" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
+            <a class="nav-link js-scroll-trigger"  href="#services">Specialities</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -69,8 +77,7 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">Welcome To my Portfolio</div>
-        <div class="intro-heading">It's Nice To Meet You</div>
+          <img src="../img/header-bg.jpg" width="100%" height="100%">
         <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
       </div>
     </div>
@@ -80,9 +87,9 @@
   <section id="services">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Specialities</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        <div class="col-lg-12 text-center ">
+          <h2 class="section-heading ated bounce">Specialities</h2>
+          <h3 class="section-subheading text-muted">i speacylezid on</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -91,27 +98,24 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
-          <h4 class="service-heading">E-Commerce</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
-            magni, dicta impedit.</p>
+          <h4 class="service-heading">Java Scrip</h4>
+          <p class="text-muted">build new project</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-          <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
-            magni, dicta impedit.</p>
+          <h4 class="service-heading">CSS</h4>
+          <p class="text-muted">Disighn your project.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-lock fa-stack-1x fa-inverse "></i>
             </span>
-          <h4 class="service-heading">Web Security</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
-            magni, dicta impedit.</p>
+          <h4 class="service-heading">HTML</h4>
+          <p class="text-muted">Building a new web site</p>
         </div>
       </div>
     </div>
@@ -121,9 +125,9 @@
   <section class="bg-light" id="portfolio">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
+        <div class="col-lg-12 text-center animated bounce">
           <h2 class="section-heading">My Project</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">several of my last projects</h3>
         </div>
       </div>
       <div class="row">
@@ -138,7 +142,6 @@
           </a>
           <div class="portfolio-caption">
             <h4>Chess</h4>
-            <p class="text-muted">Illustration</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -148,11 +151,10 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/02-books.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Explore</h4>
-            <p class="text-muted">Graphic Design</p>
+            <h4>Book Store</h4>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -162,11 +164,10 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/03-todo.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Finish</h4>
-            <p class="text-muted">Identity</p>
+            <h4>Todo List</h4>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -176,11 +177,10 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/04-guess.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
+            <h4>Guess how</h4>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -190,11 +190,10 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/05-PacMen.png" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Southwest</h4>
-            <p class="text-muted">Website Design</p>
+            <h4>PacMen</h4>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -204,11 +203,10 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/06-Mainerswapper.png" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Window</h4>
-            <p class="text-muted">Photography</p>
+            <h4>Mainer Swapper</h4>
           </div>
         </div>
       </div>
@@ -222,8 +220,8 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-            <h4>Larry Parker</h4>
-            <p class="text-muted">Lead Marketer</p>
+            <h4>Nadav Bar-Niv</h4>
+            <p class="text-muted">Developer</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
@@ -267,12 +265,12 @@
                 </a>
             </li>
             <li class="list-inline-item flex-align-center">
-              <a href="#">
+              <a href="https://www.facebook.com/profile.php?id=1032459772">
                   <i class="fa fa-facebook"></i>
                 </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/nadav-bar-niv-2647b877/">
                   <i class="fa fa-linkedin"></i>
                 </a>
             </li>
@@ -309,19 +307,22 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2>Project Chess</h2>
-                <p class="item-intro text-muted">Play Packman game</p>
+                <p class="item-intro text-muted">Play Chess game</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/chees.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>the Knowen PackMan game</p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
+                  <li>Date: May 2019
+
+                  </li>
                   <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
+                  <li>Category: Game</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close Project</button>
+                    Back to Main</button>
+                <a href="https://nadavbn11.github.io/chess/"  class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Enter to Project</button>
               </div>
             </div>
           </div>
@@ -344,20 +345,23 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2>Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2>Book Shop</h2>
+                <p class="item-intro text-muted">Internet Book Shop</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-books.jpg" alt="">
+                <p>internt book shop with option to add books</p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
+                  <li>Date: May 2019
+
+                  </li>
                   <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
+                  <li>Category: Game</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close Project</button>
+                    Back to Main</button>
+                    <a href="https://nadavbn11.github.io/bookshop/" class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Enter to Project</a>
               </div>
             </div>
           </div>
@@ -380,20 +384,23 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2>Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2>Todo List</h2>
+                <p class="item-intro text-muted">List of Todo.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-todo.jpg" alt="">
+                <p>list of to do things option to add and remove</p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
+                  <li>Date: May 2019
+
+                  </li>
                   <li>Client: Finish</li>
-                  <li>Category: Identity</li>
+                  <li>Category: Libery</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close Project</button>
+                    Back to Main</button>
+                    <a href="https://nadavbn11.github.io/todo/" class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Enter to Project</a>
               </div>
             </div>
           </div>
@@ -416,20 +423,21 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2>Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2>Guess Game</h2>
+                <p class="item-intro text-muted">Guess the carecter you thinking of</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-guess.jpg" alt="">
+                <p>Guess how i am game!</p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
+                  <li>Date: May 2019</li>
                   <li>Client: Lines</li>
-                  <li>Category: Branding</li>
+                  <li>Category: Game</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close Project</button>
+                    Back to Main</button>
+                    <a class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Enter to Project</a>
               </div>
             </div>
           </div>
@@ -452,20 +460,23 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2>Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2>PacMan Game</h2>
+                <p class="item-intro text-muted">the old knowimg game.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-PacMen.png" alt="">
+                <p>PacMAm game</p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
+                  <li>Date: May 2019
+
+                  </li>
                   <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
+                  <li>Category: Game</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close Project</button>
+                    Back to Main</button>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Enter to Project</button>
               </div>
             </div>
           </div>
@@ -488,20 +499,23 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2>Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2>Mainer Swapper</h2>
+                <p class="item-intro text-muted">the windows knowen game</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-Mainerswapper.png" alt="">
+                <p>Game with mew disign and options of MAiner Swapper</p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
+                  <li>Date: May 2019
+
+                  </li>
                   <li>Client: Window</li>
-                  <li>Category: Photography</li>
+                  <li>Category: Game</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close Project</button>
+                    Back to Main</button>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Enter to Project</button>
               </div>
             </div>
           </div>
