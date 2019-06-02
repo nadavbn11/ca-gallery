@@ -1,0 +1,31 @@
+
+
+.done {
+    text-decoration: line-through;
+}
+
+.filter-container {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.stats-container {
+    background-color: lightgoldenrodyellow;
+}
+
+.stats-container span {
+    color: orange;
+}
+
+.cover {
+    display: none;
+}
+
+.noItemMassage{
+    background-color: yellow;
+}
+
+h2{
+    display: inline;
+    padding: 20px;
+}

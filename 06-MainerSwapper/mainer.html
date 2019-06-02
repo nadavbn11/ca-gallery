@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title>Play Minseweeper</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="mainer.css">
+</head>
+
+<body onload="init()">
+
+  <h1 class="title">Minesweeper game</h1>
+  <h1>Game Time:<span id="Timer">00</span> <span id="image"></span> Flage: <span id="Flagcounter"> 00</span></h1>
+   <h1>Tries Left: <span id="Try">3</span></h1>
+  <div class="level">
+    <h3>Level:</h3>
+    <label for="R1">Easy</label>
+    <input type="Radio" Name="level" id="4" onclick="changeBoardSize(this.id)">
+    <label for="R2">Medium</label>
+    <input type="Radio" Name="level" id="8" onclick="changeBoardSize(this.id)" checked>
+    <label for="R3">Hard</label>
+    <input type="Radio" Name="level" id="12" onclick="changeBoardSize(this.id)">
+  </div>
+
+  <table class="center" border="1">
+    <tbody class="game-board"></tbody>
+  </table>
+
+  <button onclick="init()">Restart</button>
+  <script src="mainer.js"></script>
+
+  <h2 class="playerRecord"></h2>
+
+  <table class="center" border="1">
+    <tbody class="record-board">Record List:</tbody>
+  </table>
+</body>
+
+</html>

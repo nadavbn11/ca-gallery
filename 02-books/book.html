@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="book.css">
+    <title>Book Shop</title>
+</head>
+
+<body onload="init()">
+    <h1 data-trans="MainTitle">Book Shop</h1>
+    <select onchange="onSetLang(this.value)">
+        <option value="en">English</option>
+        <option value="he">עברית</option>
+    </select>
+
+
+
+    <table border="1" class="table-striped table-hover">
+        <thead>
+            <tr>
+                <td scope="col" data-trans="Index">Index</td>
+                <td scope="col" data-trans="Title">Title</td>
+                <td scope="col" data-trans="Price">Price</td>
+                <td scope="col" colspan="3" data-trans="Action">Action</td>
+            </tr>
+        </thead>
+        <tbody class="books-board">
+
+        </tbody>
+    </table>
+
+      <!-- Modal Read -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true"></div>
+    <!-- End Modal Read -->
+
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="book-service.js"></script>
+    <script src="controler.js"></script>
+
+
+</body>
+
+</html>

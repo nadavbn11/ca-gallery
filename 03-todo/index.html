@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todos</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="onInit()">
+    <h1>Todos</h1>
+    <button onclick="onAddTodo()">Add Todo</button>
+    <section class="filter-container">
+        <h2>Filter</h2>
+        <select onchange="onSetFilter(this.value)">
+            <option>All</option>
+            <option>Active</option>
+            <option>Done</option>
+        </select>
+        <h2>sortBy</h2>
+        <select onchange="onSetSort(this.value)">
+            <option>created</option>
+            <option>txt</option>
+            <option>importance</option>
+        </select>
+    </section>
+    <ul class="todo-list">
+     
+    </ul>
+    <h1 class="noItemMassage">NO ITEM DISPLAY</h1>
+    <section class="stats-container">
+        <h2>
+            Total todos: <span class="total-count"></span>
+            Active: <span class="active-count"></span>
+        </h2>
+    </section>
+
+    <script src="js/util-service.js"></script>
+    <script src="js/todo-service.js"></script>
+    <script src="js/todo-controller.js"></script>
+</body>
+</html>
